@@ -1,0 +1,18 @@
+{
+  "category": "Media",
+  "version": 1,
+  "name": "Jellyseerr",
+  "port": 5055,
+  "description": "Jellyseerr manages media requests and integrates with Jellyfin, Sonarr, and Radarr.",
+  "website": "https://docs.jellyseerr.dev",
+  "dockerImage": "ghcr.io/fallenbagel/jellyseerr:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": {
+    "jellyseerr-config": "/app/config"
+  },
+  "dockerEnvironment": {
+    "LOG_LEVEL": "info",
+    "TZ": "$TIMEZONE"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "category": "Monitoring",
+  "version": 1,
+  "name": "Beszel",
+  "port": 8090,
+  "description": "Beszel is a lightweight server monitoring hub with historical metrics and alerts.",
+  "website": "https://beszel.dev",
+  "dockerImage": "docker.io/henrygd/beszel:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": {
+    "beszel-data": "/beszel_data"
+  },
+  "dockerEnvironment": {}
+}

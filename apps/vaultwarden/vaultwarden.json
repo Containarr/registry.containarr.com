@@ -1,0 +1,18 @@
+{
+  "category": "Security",
+  "version": 1,
+  "name": "Vaultwarden",
+  "port": 80,
+  "description": "Vaultwarden is a resource-efficient, Bitwarden-compatible password manager server.",
+  "website": "https://github.com/dani-garcia/vaultwarden",
+  "dockerImage": "docker.io/vaultwarden/server:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": {
+    "vaultwarden-data": "/data"
+  },
+  "dockerEnvironment": {
+    "SIGNUPS_ALLOWED": "false",
+    "WEBSOCKET_ENABLED": "true"
+  }
+}

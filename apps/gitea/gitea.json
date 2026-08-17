@@ -1,0 +1,19 @@
+{
+  "category": "Development",
+  "version": 1,
+  "name": "Gitea",
+  "port": 3000,
+  "description": "Gitea is a compact, self-hosted Git service with code review, issues, actions, and packages.",
+  "website": "https://about.gitea.com",
+  "dockerImage": "docker.io/gitea/gitea:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": {
+    "gitea-data": "/data"
+  },
+  "dockerEnvironment": {
+    "USER_UID": "1000",
+    "USER_GID": "1000",
+    "TZ": "$TIMEZONE"
+  }
+}

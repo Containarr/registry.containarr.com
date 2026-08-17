@@ -1,0 +1,15 @@
+{
+  "category": "AI",
+  "version": 1,
+  "name": "Ollama",
+  "port": 11434,
+  "description": "Ollama runs open language and vision models locally through a simple API.",
+  "website": "https://ollama.com",
+  "dockerImage": "docker.io/ollama/ollama:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": {
+    "ollama-data": "/root/.ollama"
+  },
+  "dockerEnvironment": {}
+}

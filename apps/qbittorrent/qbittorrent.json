@@ -1,0 +1,33 @@
+{
+  "category": "Downloads",
+  "version": 1,
+  "name": "qBittorrent",
+  "port": 8080,
+  "description": "qBittorrent is a lightweight BitTorrent client with a full-featured web interface.",
+  "website": "https://www.qbittorrent.org",
+  "dockerImage": "docker.io/linuxserver/qbittorrent:latest",
+  "dockerPorts": [
+    {
+      "host": 6881,
+      "container": 6881,
+      "protocol": "tcp"
+    },
+    {
+      "host": 6881,
+      "container": 6881,
+      "protocol": "udp"
+    }
+  ],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": [
+    "qbittorrent-config:/config",
+    "$REQUIRED:/downloads"
+  ],
+  "dockerEnvironment": {
+    "PUID": "1000",
+    "PGID": "1000",
+    "TZ": "$TIMEZONE",
+    "WEBUI_PORT": "8080",
+    "TORRENTING_PORT": "6881"
+  }
+}

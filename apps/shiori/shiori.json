@@ -1,0 +1,15 @@
+{
+  "category": "Productivity",
+  "version": 1,
+  "name": "Shiori",
+  "port": 8080,
+  "description": "Shiori is a simple bookmark manager with readable-page archiving and full-text search.",
+  "website": "https://github.com/go-shiori/shiori",
+  "dockerImage": "ghcr.io/go-shiori/shiori:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": {
+    "shiori-data": "/srv/shiori"
+  },
+  "dockerEnvironment": {}
+}

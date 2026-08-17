@@ -1,0 +1,19 @@
+{
+  "category": "Productivity",
+  "version": 1,
+  "name": "FreshRSS",
+  "port": 80,
+  "description": "FreshRSS is a fast, extensible feed reader for following websites and podcasts.",
+  "website": "https://freshrss.org",
+  "dockerImage": "docker.io/freshrss/freshrss:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": {
+    "freshrss-data": "/var/www/FreshRSS/data",
+    "freshrss-extensions": "/var/www/FreshRSS/extensions"
+  },
+  "dockerEnvironment": {
+    "TZ": "$TIMEZONE",
+    "CRON_MIN": "3,33"
+  }
+}

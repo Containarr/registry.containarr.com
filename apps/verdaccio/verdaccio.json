@@ -1,0 +1,16 @@
+{
+  "category": "Development",
+  "version": 1,
+  "name": "Verdaccio",
+  "port": 4873,
+  "description": "Verdaccio is a lightweight private npm proxy registry for JavaScript packages.",
+  "website": "https://verdaccio.org",
+  "dockerImage": "docker.io/verdaccio/verdaccio:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": {
+    "verdaccio-storage": "/verdaccio/storage",
+    "verdaccio-config": "/verdaccio/conf"
+  },
+  "dockerEnvironment": {}
+}

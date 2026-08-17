@@ -1,0 +1,21 @@
+{
+  "category": "Utilities",
+  "version": 1,
+  "name": "PairDrop",
+  "port": 3000,
+  "description": "PairDrop transfers files securely between nearby devices through a browser.",
+  "website": "https://pairdrop.net",
+  "dockerImage": "docker.io/linuxserver/pairdrop:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": {
+    "pairdrop-config": "/config"
+  },
+  "dockerEnvironment": {
+    "PUID": "1000",
+    "PGID": "1000",
+    "TZ": "$TIMEZONE",
+    "RATE_LIMIT": "false",
+    "WS_FALLBACK": "false"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "category": "Monitoring",
+  "version": 1,
+  "name": "Uptime Kuma",
+  "port": 3001,
+  "description": "Uptime Kuma is a polished monitoring dashboard for websites, APIs, ports, and containers.",
+  "website": "https://uptime.kuma.pet",
+  "dockerImage": "docker.io/louislam/uptime-kuma:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": {
+    "uptime-kuma-data": "/app/data"
+  },
+  "dockerEnvironment": {}
+}

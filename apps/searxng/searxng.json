@@ -1,0 +1,15 @@
+{
+  "category": "Internet",
+  "version": 1,
+  "name": "SearXNG",
+  "port": 8080,
+  "description": "SearXNG is a privacy-respecting metasearch engine that aggregates results from many search services.",
+  "website": "https://docs.searxng.org",
+  "dockerImage": "docker.io/searxng/searxng:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": {
+    "searxng-config": "/etc/searxng"
+  },
+  "dockerEnvironment": {}
+}

@@ -1,0 +1,17 @@
+{
+  "category": "Automation",
+  "version": 1,
+  "name": "Node-RED",
+  "port": 1880,
+  "description": "Node-RED is a flow-based development tool for connecting hardware devices, APIs, and online services.",
+  "website": "https://nodered.org",
+  "dockerImage": "docker.io/nodered/node-red:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": {
+    "node-red-data": "/data"
+  },
+  "dockerEnvironment": {
+    "TZ": "$TIMEZONE"
+  }
+}

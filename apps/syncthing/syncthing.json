@@ -1,0 +1,19 @@
+{
+  "category": "Storage",
+  "version": 1,
+  "name": "Syncthing",
+  "port": 8384,
+  "description": "Syncthing continuously synchronizes files directly between your devices without a central cloud.",
+  "website": "https://syncthing.net",
+  "dockerImage": "docker.io/syncthing/syncthing:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": [
+    "syncthing-config:/var/syncthing/config",
+    "$REQUIRED:/var/syncthing/data"
+  ],
+  "dockerEnvironment": {
+    "PUID": "1000",
+    "PGID": "1000"
+  }
+}

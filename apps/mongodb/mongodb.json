@@ -1,0 +1,15 @@
+{
+  "category": "Database",
+  "version": 1,
+  "name": "MongoDB",
+  "port": 27017,
+  "description": "MongoDB is a document-oriented database for flexible, JSON-like application data.",
+  "website": "https://www.mongodb.com",
+  "dockerImage": "docker.io/mongo:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": {
+    "mongodb-data": "/data/db"
+  },
+  "dockerEnvironment": {}
+}

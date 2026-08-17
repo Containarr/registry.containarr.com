@@ -1,0 +1,24 @@
+{
+  "category": "Media",
+  "version": 1,
+  "name": "PhotoPrism",
+  "port": 2342,
+  "description": "PhotoPrism is an AI-powered photo app for browsing, organizing, and sharing personal collections.",
+  "website": "https://www.photoprism.app",
+  "dockerImage": "docker.io/photoprism/photoprism:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": [
+    "photoprism-storage:/photoprism/storage",
+    "$REQUIRED:/photoprism/originals",
+    "$REQUIRED:/photoprism/import"
+  ],
+  "dockerEnvironment": {
+    "PHOTOPRISM_AUTH_MODE": "password",
+    "PHOTOPRISM_ADMIN_PASSWORD": "$REQUIRED",
+    "PHOTOPRISM_SITE_CAPTION": "Photos",
+    "PHOTOPRISM_DISABLE_TLS": "true",
+    "PHOTOPRISM_DATABASE_DRIVER": "sqlite",
+    "TZ": "$TIMEZONE"
+  }
+}

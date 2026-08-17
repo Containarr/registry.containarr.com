@@ -1,0 +1,15 @@
+{
+  "category": "Utilities",
+  "version": 1,
+  "name": "PrivateBin",
+  "port": 8080,
+  "description": "PrivateBin is a minimalist encrypted paste service where the server cannot read stored content.",
+  "website": "https://privatebin.info",
+  "dockerImage": "docker.io/privatebin/nginx-fpm-alpine:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": {
+    "privatebin-data": "/srv/data"
+  },
+  "dockerEnvironment": {}
+}

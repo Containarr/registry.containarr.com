@@ -1,0 +1,23 @@
+{
+  "category": "Database",
+  "version": 1,
+  "name": "TimescaleDB",
+  "port": 5432,
+  "description": "TimescaleDB is a PostgreSQL extension optimized for time-series data and demanding analytical workloads.",
+  "website": "https://www.timescale.com",
+  "dockerImage": "docker.io/timescale/timescaledb:latest-pg17",
+  "dockerPorts": [
+    {
+      "host": 5432,
+      "container": 5432,
+      "protocol": "tcp"
+    }
+  ],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": {
+    "timescaledb-data": "/var/lib/postgresql/data"
+  },
+  "dockerEnvironment": {
+    "POSTGRES_PASSWORD": "$REQUIRED"
+  }
+}

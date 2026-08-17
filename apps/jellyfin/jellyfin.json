@@ -1,0 +1,19 @@
+{
+  "category": "Media",
+  "version": 1,
+  "name": "Jellyfin",
+  "port": 8096,
+  "description": "Jellyfin is a free media server for organizing and streaming movies, shows, music, and photos.",
+  "website": "https://jellyfin.org",
+  "dockerImage": "docker.io/jellyfin/jellyfin:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": [
+    "jellyfin-config:/config",
+    "jellyfin-cache:/cache",
+    "$REQUIRED:/media"
+  ],
+  "dockerEnvironment": {
+    "TZ": "$TIMEZONE"
+  }
+}

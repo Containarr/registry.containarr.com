@@ -1,0 +1,21 @@
+{
+  "category": "Downloads",
+  "version": 1,
+  "name": "Transmission",
+  "port": 9091,
+  "description": "Transmission is a fast, easy-to-use BitTorrent client with a clean web interface.",
+  "website": "https://transmissionbt.com",
+  "dockerImage": "docker.io/linuxserver/transmission:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": [
+    "transmission-config:/config",
+    "$REQUIRED:/downloads",
+    "$REQUIRED:/watch"
+  ],
+  "dockerEnvironment": {
+    "PUID": "1000",
+    "PGID": "1000",
+    "TZ": "$TIMEZONE"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "category": "Media",
+  "version": 1,
+  "name": "Prowlarr",
+  "port": 9696,
+  "description": "Prowlarr manages indexers and synchronizes them with Sonarr, Radarr, Lidarr, and Readarr.",
+  "website": "https://prowlarr.com",
+  "dockerImage": "docker.io/linuxserver/prowlarr:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": {
+    "prowlarr-config": "/config"
+  },
+  "dockerEnvironment": {
+    "PUID": "1000",
+    "PGID": "1000",
+    "TZ": "$TIMEZONE"
+  }
+}

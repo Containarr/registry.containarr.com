@@ -1,0 +1,13 @@
+{
+  "category": "Database",
+  "version": 1,
+  "name": "Adminer",
+  "port": 8080,
+  "description": "Adminer is a compact web interface for managing SQL databases.",
+  "website": "https://www.adminer.org",
+  "dockerImage": "docker.io/adminer:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": {},
+  "dockerEnvironment": {}
+}

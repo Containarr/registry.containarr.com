@@ -1,0 +1,17 @@
+{
+  "category": "Dashboard",
+  "version": 1,
+  "name": "Dashy",
+  "port": 8080,
+  "description": "Dashy is a highly customizable dashboard for organizing self-hosted services and links.",
+  "website": "https://dashy.to",
+  "dockerImage": "docker.io/lissy93/dashy:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": {
+    "dashy-config": "/app/user-data"
+  },
+  "dockerEnvironment": {
+    "NODE_ENV": "production"
+  }
+}

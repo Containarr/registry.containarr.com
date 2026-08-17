@@ -1,0 +1,15 @@
+{
+  "category": "Monitoring",
+  "version": 1,
+  "name": "Grafana",
+  "port": 3000,
+  "description": "Grafana provides dashboards and visualizations for metrics, logs, traces, and other observability data.",
+  "website": "https://grafana.com",
+  "dockerImage": "docker.io/grafana/grafana:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": {
+    "grafana-storage": "/var/lib/grafana"
+  },
+  "dockerEnvironment": {}
+}

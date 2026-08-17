@@ -1,0 +1,18 @@
+{
+  "category": "Smart Home",
+  "version": 1,
+  "name": "Scrypted",
+  "port": 11080,
+  "description": "Scrypted is a high-performance home video integration platform and NVR for cameras and smart-home ecosystems.",
+  "website": "https://www.scrypted.app",
+  "dockerImage": "docker.io/koush/scrypted:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "host",
+  "dockerVolumes": {
+    "scrypted-volume": "/server/volume"
+  },
+  "dockerEnvironment": {
+    "TZ": "$TIMEZONE"
+  },
+  "dockerPrivileged": true
+}

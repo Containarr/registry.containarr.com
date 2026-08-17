@@ -1,0 +1,15 @@
+{
+  "category": "Development",
+  "version": 1,
+  "name": "Jenkins",
+  "port": 8080,
+  "description": "Jenkins is an extensible automation server for building, testing, and deploying software.",
+  "website": "https://www.jenkins.io",
+  "dockerImage": "docker.io/jenkins/jenkins:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": {
+    "jenkins-home": "/var/jenkins_home"
+  },
+  "dockerEnvironment": {}
+}

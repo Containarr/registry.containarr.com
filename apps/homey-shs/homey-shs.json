@@ -1,0 +1,16 @@
+{
+  "category": "Smart Home",
+  "version": 1,
+  "name": "Homey Self-Hosted Server",
+  "port": 4859,
+  "description": "Homey Self-Hosted Server allows you to control all your smart home devices locally without relying on the cloud.",
+  "website": "https://homey.app",
+  "dockerImage": "ghcr.io/athombv/homey-shs:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "host",
+  "dockerVolumes": [
+    "$REQUIRED:/homey/user"
+  ],
+  "dockerEnvironment": {},
+  "dockerPrivileged": true
+}

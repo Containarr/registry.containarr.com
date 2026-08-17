@@ -1,0 +1,18 @@
+{
+  "category": "Downloads",
+  "version": 1,
+  "name": "Pinchflat",
+  "port": 8945,
+  "description": "Pinchflat automatically downloads and organizes YouTube content using yt-dlp.",
+  "website": "https://github.com/kieraneglin/pinchflat",
+  "dockerImage": "ghcr.io/kieraneglin/pinchflat:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": [
+    "pinchflat-config:/config",
+    "$REQUIRED:/downloads"
+  ],
+  "dockerEnvironment": {
+    "TZ": "$TIMEZONE"
+  }
+}

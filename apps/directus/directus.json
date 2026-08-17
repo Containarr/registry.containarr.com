@@ -1,0 +1,21 @@
+{
+  "category": "Development",
+  "version": 1,
+  "name": "Directus",
+  "port": 8055,
+  "description": "Directus turns a SQL database into a real-time API and no-code data management app.",
+  "website": "https://directus.io",
+  "dockerImage": "docker.io/directus/directus:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": {
+    "directus-database": "/directus/database",
+    "directus-uploads": "/directus/uploads",
+    "directus-extensions": "/directus/extensions"
+  },
+  "dockerEnvironment": {
+    "SECRET": "$REQUIRED",
+    "DB_CLIENT": "sqlite3",
+    "DB_FILENAME": "/directus/database/data.db"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "category": "Downloads",
+  "version": 1,
+  "name": "NZBGet",
+  "port": 6789,
+  "description": "NZBGet is an efficient Usenet downloader with a responsive web interface.",
+  "website": "https://nzbget.com",
+  "dockerImage": "docker.io/linuxserver/nzbget:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": [
+    "nzbget-config:/config",
+    "$REQUIRED:/downloads"
+  ],
+  "dockerEnvironment": {
+    "PUID": "1000",
+    "PGID": "1000",
+    "TZ": "$TIMEZONE"
+  }
+}

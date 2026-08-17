@@ -1,0 +1,19 @@
+{
+  "category": "Media",
+  "version": 1,
+  "name": "Tautulli",
+  "port": 8181,
+  "description": "Tautulli monitors Plex activity and provides viewing history, statistics, and notifications.",
+  "website": "https://tautulli.com",
+  "dockerImage": "docker.io/linuxserver/tautulli:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": {
+    "tautulli-config": "/config"
+  },
+  "dockerEnvironment": {
+    "PUID": "1000",
+    "PGID": "1000",
+    "TZ": "$TIMEZONE"
+  }
+}

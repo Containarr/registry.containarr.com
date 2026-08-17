@@ -1,0 +1,16 @@
+{
+  "category": "Database",
+  "version": 1,
+  "name": "InfluxDB",
+  "port": 8086,
+  "description": "InfluxDB is a time-series database for metrics, events, and real-time analytics.",
+  "website": "https://www.influxdata.com",
+  "dockerImage": "docker.io/influxdb:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": {
+    "influxdb-data": "/var/lib/influxdb2",
+    "influxdb-config": "/etc/influxdb2"
+  },
+  "dockerEnvironment": {}
+}

@@ -1,0 +1,16 @@
+{
+  "category": "Storage",
+  "version": 1,
+  "name": "File Browser",
+  "port": 80,
+  "description": "File Browser provides a web file manager for uploading, organizing, editing, and sharing files.",
+  "website": "https://filebrowser.org",
+  "dockerImage": "docker.io/filebrowser/filebrowser:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": [
+    "filebrowser-data:/database",
+    "$REQUIRED:/srv"
+  ],
+  "dockerEnvironment": {}
+}

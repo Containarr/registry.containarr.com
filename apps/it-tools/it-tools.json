@@ -1,0 +1,13 @@
+{
+  "category": "Utilities",
+  "version": 1,
+  "name": "IT-Tools",
+  "port": 80,
+  "description": "IT-Tools collects useful developer and system-administrator utilities in one browser app.",
+  "website": "https://it-tools.tech",
+  "dockerImage": "docker.io/corentinth/it-tools:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": {},
+  "dockerEnvironment": {}
+}

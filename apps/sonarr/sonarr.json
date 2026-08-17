@@ -1,0 +1,21 @@
+{
+  "category": "Media",
+  "version": 1,
+  "name": "Sonarr",
+  "port": 8989,
+  "description": "Sonarr is a TV series collection manager for Usenet and BitTorrent users.",
+  "website": "https://sonarr.tv",
+  "dockerImage": "docker.io/linuxserver/sonarr:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": [
+    "sonarr-config:/config",
+    "$REQUIRED:/tv",
+    "$REQUIRED:/downloads"
+  ],
+  "dockerEnvironment": {
+    "PUID": "1000",
+    "PGID": "1000",
+    "TZ": "$TIMEZONE"
+  }
+}

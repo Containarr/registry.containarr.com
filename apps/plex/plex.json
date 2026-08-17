@@ -1,0 +1,19 @@
+{
+  "category": "Media",
+  "version": 1,
+  "name": "Plex Media Server",
+  "port": 32400,
+  "description": "Plex organizes video, music, and photos from personal media libraries and streams them to smart TVs, streaming boxes and mobile devices.",
+  "website": "https://plex.tv",
+  "dockerImage": "docker.io/plexinc/pms-docker:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": [
+    "plex-config:/config",
+    "plex-transcode:/transcode",
+    "$REQUIRED:/data"
+  ],
+  "dockerEnvironment": {
+    "TZ": "$TIMEZONE"
+  }
+}

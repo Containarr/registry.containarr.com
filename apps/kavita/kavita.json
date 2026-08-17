@@ -1,0 +1,18 @@
+{
+  "category": "Media",
+  "version": 1,
+  "name": "Kavita",
+  "port": 5000,
+  "description": "Kavita is a fast, cross-platform reading server for comics, manga, and ebooks.",
+  "website": "https://www.kavitareader.com",
+  "dockerImage": "docker.io/jvmilazz0/kavita:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": [
+    "kavita-config:/kavita/config",
+    "$REQUIRED:/books"
+  ],
+  "dockerEnvironment": {
+    "TZ": "$TIMEZONE"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "category": "Internet",
+  "version": 1,
+  "name": "wg-easy",
+  "port": 51821,
+  "description": "wg-easy provides a simple web interface for managing a WireGuard VPN server.",
+  "website": "https://wg-easy.github.io/wg-easy/",
+  "dockerImage": "ghcr.io/wg-easy/wg-easy:latest",
+  "dockerPorts": [
+    {
+      "host": 51820,
+      "container": 51820,
+      "protocol": "udp"
+    }
+  ],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": {
+    "wg-easy-data": "/etc/wireguard",
+    "/lib/modules": "/lib/modules:ro"
+  },
+  "dockerEnvironment": {
+    "INSECURE": "true"
+  },
+  "dockerCapabilities": [
+    "NET_ADMIN",
+    "SYS_MODULE"
+  ]
+}

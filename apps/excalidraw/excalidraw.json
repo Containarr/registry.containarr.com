@@ -1,0 +1,13 @@
+{
+  "category": "Productivity",
+  "version": 1,
+  "name": "Excalidraw",
+  "port": 80,
+  "description": "Excalidraw is a collaborative whiteboard for sketching diagrams with a hand-drawn look.",
+  "website": "https://excalidraw.com",
+  "dockerImage": "docker.io/excalidraw/excalidraw:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": {},
+  "dockerEnvironment": {}
+}

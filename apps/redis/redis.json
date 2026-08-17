@@ -1,0 +1,15 @@
+{
+  "category": "Database",
+  "version": 1,
+  "name": "Redis",
+  "port": 6379,
+  "description": "Redis is an in-memory data store used for caching, queues, streaming, and fast application state.",
+  "website": "https://redis.io",
+  "dockerImage": "docker.io/redis:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": {
+    "redis-data": "/data"
+  },
+  "dockerEnvironment": {}
+}

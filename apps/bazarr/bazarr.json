@@ -1,0 +1,21 @@
+{
+  "category": "Media",
+  "version": 1,
+  "name": "Bazarr",
+  "port": 6767,
+  "description": "Bazarr manages and downloads subtitles for Sonarr and Radarr libraries.",
+  "website": "https://www.bazarr.media",
+  "dockerImage": "docker.io/linuxserver/bazarr:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": [
+    "bazarr-config:/config",
+    "$REQUIRED:/movies",
+    "$REQUIRED:/tv"
+  ],
+  "dockerEnvironment": {
+    "PUID": "1000",
+    "PGID": "1000",
+    "TZ": "$TIMEZONE"
+  }
+}

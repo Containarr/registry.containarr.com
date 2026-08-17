@@ -1,0 +1,15 @@
+{
+  "category": "Monitoring",
+  "version": 1,
+  "name": "Prometheus",
+  "port": 9090,
+  "description": "Prometheus collects time-series metrics and provides a powerful query language and alerting model.",
+  "website": "https://prometheus.io",
+  "dockerImage": "docker.io/prom/prometheus:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": {
+    "prometheus-data": "/prometheus"
+  },
+  "dockerEnvironment": {}
+}

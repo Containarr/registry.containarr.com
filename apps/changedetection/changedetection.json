@@ -1,0 +1,17 @@
+{
+  "category": "Automation",
+  "version": 1,
+  "name": "changedetection.io",
+  "port": 5000,
+  "description": "changedetection.io watches web pages and notifies you when their content changes.",
+  "website": "https://changedetection.io",
+  "dockerImage": "docker.io/dgtlmoon/changedetection.io:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": {
+    "changedetection-data": "/datastore"
+  },
+  "dockerEnvironment": {
+    "TZ": "$TIMEZONE"
+  }
+}

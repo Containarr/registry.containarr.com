@@ -1,0 +1,20 @@
+{
+  "category": "Media",
+  "version": 1,
+  "name": "Calibre-Web",
+  "port": 8083,
+  "description": "Calibre-Web provides a clean browser interface for browsing, reading, and downloading ebooks.",
+  "website": "https://github.com/janeczku/calibre-web",
+  "dockerImage": "docker.io/linuxserver/calibre-web:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": [
+    "calibre-web-config:/config",
+    "$REQUIRED:/books"
+  ],
+  "dockerEnvironment": {
+    "PUID": "1000",
+    "PGID": "1000",
+    "TZ": "$TIMEZONE"
+  }
+}

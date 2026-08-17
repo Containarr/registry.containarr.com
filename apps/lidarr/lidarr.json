@@ -1,0 +1,21 @@
+{
+  "category": "Media",
+  "version": 1,
+  "name": "Lidarr",
+  "port": 8686,
+  "description": "Lidarr is a music collection manager for Usenet and BitTorrent users.",
+  "website": "https://lidarr.audio",
+  "dockerImage": "docker.io/linuxserver/lidarr:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": [
+    "lidarr-config:/config",
+    "$REQUIRED:/music",
+    "$REQUIRED:/downloads"
+  ],
+  "dockerEnvironment": {
+    "PUID": "1000",
+    "PGID": "1000",
+    "TZ": "$TIMEZONE"
+  }
+}

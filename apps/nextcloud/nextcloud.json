@@ -1,0 +1,15 @@
+{
+  "category": "Storage",
+  "version": 1,
+  "name": "Nextcloud",
+  "port": 80,
+  "description": "Nextcloud provides private file sync, sharing, calendars, contacts, and collaboration.",
+  "website": "https://nextcloud.com",
+  "dockerImage": "docker.io/nextcloud:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": {
+    "nextcloud-data": "/var/www/html"
+  },
+  "dockerEnvironment": {}
+}

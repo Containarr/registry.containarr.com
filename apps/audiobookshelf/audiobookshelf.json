@@ -1,0 +1,20 @@
+{
+  "category": "Media",
+  "version": 1,
+  "name": "Audiobookshelf",
+  "port": 80,
+  "description": "Audiobookshelf is a self-hosted server for audiobooks and podcasts with progress syncing.",
+  "website": "https://www.audiobookshelf.org",
+  "dockerImage": "ghcr.io/advplyr/audiobookshelf:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": [
+    "audiobookshelf-config:/config",
+    "audiobookshelf-metadata:/metadata",
+    "$REQUIRED:/audiobooks",
+    "$REQUIRED:/podcasts"
+  ],
+  "dockerEnvironment": {
+    "TZ": "$TIMEZONE"
+  }
+}

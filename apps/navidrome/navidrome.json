@@ -1,0 +1,20 @@
+{
+  "category": "Media",
+  "version": 1,
+  "name": "Navidrome",
+  "port": 4533,
+  "description": "Navidrome is a lightweight music server compatible with Subsonic clients.",
+  "website": "https://www.navidrome.org",
+  "dockerImage": "docker.io/deluan/navidrome:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": [
+    "navidrome-data:/data",
+    "$REQUIRED:/music:ro"
+  ],
+  "dockerEnvironment": {
+    "ND_SCANSCHEDULE": "1h",
+    "ND_LOGLEVEL": "info",
+    "ND_SESSIONTIMEOUT": "24h"
+  }
+}

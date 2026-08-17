@@ -1,0 +1,17 @@
+{
+  "category": "Productivity",
+  "version": 1,
+  "name": "TriliumNext Notes",
+  "port": 8080,
+  "description": "TriliumNext Notes is a hierarchical knowledge base with rich notes, scripting, and strong linking.",
+  "website": "https://triliumnext.github.io/Docs/",
+  "dockerImage": "docker.io/triliumnext/notes:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": {
+    "trilium-data": "/home/node/trilium-data"
+  },
+  "dockerEnvironment": {
+    "TZ": "$TIMEZONE"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "category": "Smart Home",
+  "version": 1,
+  "name": "Home Assistant",
+  "port": 8123,
+  "description": "Home Assistant is an open-source home automation platform focused on local control and privacy.",
+  "website": "https://www.home-assistant.io",
+  "dockerImage": "docker.io/homeassistant/home-assistant:stable",
+  "dockerPorts": [],
+  "dockerNetworkMode": "host",
+  "dockerVolumes": {
+    "home-assistant-config": "/config",
+    "/run/dbus": "/run/dbus:ro"
+  },
+  "dockerEnvironment": {
+    "TZ": "$TIMEZONE"
+  },
+  "dockerPrivileged": true
+}

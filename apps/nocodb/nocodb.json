@@ -1,0 +1,15 @@
+{
+  "category": "Development",
+  "version": 1,
+  "name": "NocoDB",
+  "port": 8080,
+  "description": "NocoDB is an open-source no-code platform for building collaborative database applications.",
+  "website": "https://nocodb.com",
+  "dockerImage": "docker.io/nocodb/nocodb:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": {
+    "nocodb-data": "/usr/app/data"
+  },
+  "dockerEnvironment": {}
+}

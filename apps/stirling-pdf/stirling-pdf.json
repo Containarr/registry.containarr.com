@@ -1,0 +1,20 @@
+{
+  "category": "Utilities",
+  "version": 1,
+  "name": "Stirling PDF",
+  "port": 8080,
+  "description": "Stirling PDF is a locally hosted toolbox for converting, editing, signing, and organizing PDF files.",
+  "website": "https://www.stirlingpdf.com",
+  "dockerImage": "docker.io/stirlingtools/stirling-pdf:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": {
+    "stirling-data": "/usr/share/tessdata",
+    "stirling-config": "/configs",
+    "stirling-logs": "/logs"
+  },
+  "dockerEnvironment": {
+    "SECURITY_ENABLELOGIN": "true",
+    "SYSTEM_DEFAULTLOCALE": "en-GB"
+  }
+}

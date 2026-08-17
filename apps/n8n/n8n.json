@@ -1,0 +1,19 @@
+{
+  "category": "Automation",
+  "version": 1,
+  "name": "n8n",
+  "port": 5678,
+  "description": "n8n is a workflow automation platform for connecting apps, APIs, and services.",
+  "website": "https://n8n.io",
+  "dockerImage": "docker.io/n8nio/n8n:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": {
+    "n8n-data": "/home/node/.n8n"
+  },
+  "dockerEnvironment": {
+    "TZ": "$TIMEZONE",
+    "GENERIC_TIMEZONE": "$TIMEZONE",
+    "N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS": "true"
+  }
+}

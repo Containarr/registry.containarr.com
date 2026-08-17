@@ -1,0 +1,15 @@
+{
+  "category": "Monitoring",
+  "version": 1,
+  "name": "VictoriaMetrics",
+  "port": 8428,
+  "description": "VictoriaMetrics is a fast, cost-effective time-series database and monitoring solution.",
+  "website": "https://victoriametrics.com",
+  "dockerImage": "docker.io/victoriametrics/victoria-metrics:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": {
+    "victoria-metrics-data": "/victoria-metrics-data"
+  },
+  "dockerEnvironment": {}
+}

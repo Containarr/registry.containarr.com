@@ -1,0 +1,20 @@
+{
+  "category": "Productivity",
+  "version": 1,
+  "name": "Mealie",
+  "port": 9000,
+  "description": "Mealie is a recipe manager and meal planner with shopping lists and recipe imports.",
+  "website": "https://mealie.io",
+  "dockerImage": "ghcr.io/mealie-recipes/mealie:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": {
+    "mealie-data": "/app/data"
+  },
+  "dockerEnvironment": {
+    "ALLOW_SIGNUP": "false",
+    "PUID": "1000",
+    "PGID": "1000",
+    "TZ": "$TIMEZONE"
+  }
+}

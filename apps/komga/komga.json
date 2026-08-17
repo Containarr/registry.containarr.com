@@ -1,0 +1,18 @@
+{
+  "category": "Media",
+  "version": 1,
+  "name": "Komga",
+  "port": 25600,
+  "description": "Komga is a media server for comics, manga, magazines, and ebooks.",
+  "website": "https://komga.org",
+  "dockerImage": "docker.io/gotson/komga:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": [
+    "komga-config:/config",
+    "$REQUIRED:/data"
+  ],
+  "dockerEnvironment": {
+    "TZ": "$TIMEZONE"
+  }
+}

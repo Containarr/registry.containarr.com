@@ -1,0 +1,26 @@
+{
+  "category": "Internet",
+  "version": 1,
+  "name": "Pi-hole",
+  "port": 80,
+  "description": "Pi-hole is a network-wide ad blocker that acts as a DNS sinkhole.",
+  "website": "https://pi-hole.net",
+  "dockerImage": "docker.io/pihole/pihole:latest",
+  "dockerPorts": [
+    {
+      "host": 53,
+      "container": 53,
+      "protocol": "tcp"
+    },
+    {
+      "host": 53,
+      "container": 53,
+      "protocol": "udp"
+    }
+  ],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": {},
+  "dockerEnvironment": {
+    "TZ": "$TIMEZONE"
+  }
+}

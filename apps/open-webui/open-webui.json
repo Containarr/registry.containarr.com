@@ -1,0 +1,17 @@
+{
+  "category": "AI",
+  "version": 1,
+  "name": "Open WebUI",
+  "port": 8080,
+  "description": "Open WebUI is a feature-rich, self-hosted interface for Ollama and OpenAI-compatible model APIs.",
+  "website": "https://openwebui.com",
+  "dockerImage": "ghcr.io/open-webui/open-webui:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": {
+    "open-webui-data": "/app/backend/data"
+  },
+  "dockerEnvironment": {
+    "OLLAMA_BASE_URL": "http://ollama:11434"
+  }
+}

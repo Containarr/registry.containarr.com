@@ -1,0 +1,15 @@
+{
+  "category": "Finance",
+  "version": 1,
+  "name": "Actual Budget",
+  "port": 5006,
+  "description": "Actual Budget is a privacy-focused personal finance and budgeting app with local-first data sync.",
+  "website": "https://actualbudget.org",
+  "dockerImage": "docker.io/actualbudget/actual-server:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": {
+    "actual-budget-data": "/data"
+  },
+  "dockerEnvironment": {}
+}

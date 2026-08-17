@@ -1,0 +1,17 @@
+{
+  "category": "Communication",
+  "version": 1,
+  "name": "Gotify",
+  "port": 80,
+  "description": "Gotify is a simple server for sending and receiving real-time push notifications.",
+  "website": "https://gotify.net",
+  "dockerImage": "docker.io/gotify/server:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": {
+    "gotify-data": "/app/data"
+  },
+  "dockerEnvironment": {
+    "TZ": "$TIMEZONE"
+  }
+}

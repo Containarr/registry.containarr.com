@@ -1,0 +1,13 @@
+{
+  "category": "Productivity",
+  "version": 1,
+  "name": "diagrams.net",
+  "port": 8080,
+  "description": "diagrams.net is a browser-based diagramming tool for flowcharts, architecture, and technical drawings.",
+  "website": "https://www.diagrams.net",
+  "dockerImage": "docker.io/jgraph/drawio:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": {},
+  "dockerEnvironment": {}
+}

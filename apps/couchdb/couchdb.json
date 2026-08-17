@@ -1,0 +1,18 @@
+{
+  "category": "Database",
+  "version": 1,
+  "name": "Apache CouchDB",
+  "port": 5984,
+  "description": "Apache CouchDB is a document database with an HTTP API and a built-in administration interface.",
+  "website": "https://couchdb.apache.org",
+  "dockerImage": "docker.io/couchdb:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": {
+    "couchdb-data": "/opt/couchdb/data"
+  },
+  "dockerEnvironment": {
+    "COUCHDB_USER": "$REQUIRED",
+    "COUCHDB_PASSWORD": "$REQUIRED"
+  }
+}

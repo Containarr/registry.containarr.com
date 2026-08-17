@@ -1,0 +1,23 @@
+{
+  "category": "Monitoring",
+  "version": 1,
+  "name": "LibreSpeed",
+  "port": 80,
+  "description": "LibreSpeed is a lightweight, self-hosted browser speed test with no external dependencies.",
+  "website": "https://github.com/librespeed/speedtest",
+  "dockerImage": "docker.io/linuxserver/librespeed:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": {
+    "librespeed-config": "/config"
+  },
+  "dockerEnvironment": {
+    "PUID": "1000",
+    "PGID": "1000",
+    "TZ": "$TIMEZONE",
+    "MODE": "standalone",
+    "TELEMETRY": "false",
+    "ENABLE_ID_OBFUSCATION": "true",
+    "REDACT_IP_ADDRESSES": "false"
+  }
+}

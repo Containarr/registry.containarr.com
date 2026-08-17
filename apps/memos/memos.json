@@ -1,0 +1,15 @@
+{
+  "category": "Productivity",
+  "version": 1,
+  "name": "Memos",
+  "port": 5230,
+  "description": "Memos is a lightweight, privacy-first note-taking service for quickly capturing ideas.",
+  "website": "https://www.usememos.com",
+  "dockerImage": "ghcr.io/usememos/memos:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": {
+    "memos-data": "/var/opt/memos"
+  },
+  "dockerEnvironment": {}
+}

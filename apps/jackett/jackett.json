@@ -1,0 +1,20 @@
+{
+  "category": "Media",
+  "version": 1,
+  "name": "Jackett",
+  "port": 9117,
+  "description": "Jackett translates tracker queries into a consistent indexer API for media applications.",
+  "website": "https://github.com/Jackett/Jackett",
+  "dockerImage": "docker.io/linuxserver/jackett:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": [
+    "jackett-config:/config",
+    "$REQUIRED:/downloads"
+  ],
+  "dockerEnvironment": {
+    "PUID": "1000",
+    "PGID": "1000",
+    "TZ": "$TIMEZONE"
+  }
+}

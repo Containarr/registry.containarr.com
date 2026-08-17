@@ -1,0 +1,21 @@
+{
+  "category": "Downloads",
+  "version": 1,
+  "name": "SABnzbd",
+  "port": 8080,
+  "description": "SABnzbd automates downloading, verifying, repairing, extracting, and filing Usenet downloads.",
+  "website": "https://sabnzbd.org",
+  "dockerImage": "docker.io/linuxserver/sabnzbd:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": [
+    "sabnzbd-config:/config",
+    "$REQUIRED:/downloads",
+    "$REQUIRED:/incomplete-downloads"
+  ],
+  "dockerEnvironment": {
+    "PUID": "1000",
+    "PGID": "1000",
+    "TZ": "$TIMEZONE"
+  }
+}
