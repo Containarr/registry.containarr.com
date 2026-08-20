@@ -1,0 +1,27 @@
+{
+  "category": "Internet",
+  "version": 1,
+  "name": "Gluetun",
+  "port": 8000,
+  "description": "Gluetun is a lightweight VPN client with a built-in firewall and support for many VPN providers.",
+  "website": "https://github.com/passteque/gluetun",
+  "dockerImage": "docker.io/qmcgaw/gluetun:latest",
+  "dockerPorts": [],
+  "dockerNetworkMode": "bridge",
+  "dockerVolumes": {
+    "$REQUIRED": "/gluetun"
+  },
+  "dockerDevices": {
+    "/dev/net/tun": "/dev/net/tun"
+  },
+  "dockerEnvironment": {
+    "VPN_SERVICE_PROVIDER": "$REQUIRED",
+    "VPN_TYPE": "openvpn",
+    "OPENVPN_USER": "$REQUIRED",
+    "OPENVPN_PASSWORD": "$REQUIRED",
+    "TZ": "$TIMEZONE"
+  },
+  "dockerCapabilities": [
+    "NET_ADMIN"
+  ]
+}
