@@ -9,7 +9,7 @@
   "dockerPorts": [],
   "dockerNetworkMode": "bridge",
   "dockerVolumes": [
-    "syncthing-config:/var/syncthing/config",
+    "$REQUIRED:/var/syncthing/config",
     "$REQUIRED:/var/syncthing/data"
   ],
   "dockerEnvironment": {

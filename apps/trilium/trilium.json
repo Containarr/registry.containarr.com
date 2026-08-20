@@ -9,7 +9,7 @@
   "dockerPorts": [],
   "dockerNetworkMode": "bridge",
   "dockerVolumes": {
-    "trilium-data": "/home/node/trilium-data"
+    "$REQUIRED": "/home/node/trilium-data"
   },
   "dockerEnvironment": {
     "TZ": "$TIMEZONE"

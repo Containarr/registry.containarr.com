@@ -9,7 +9,7 @@
   "dockerPorts": [],
   "dockerNetworkMode": "bridge",
   "dockerVolumes": {
-    "mealie-data": "/app/data"
+    "$REQUIRED": "/app/data"
   },
   "dockerEnvironment": {
     "ALLOW_SIGNUP": "false",

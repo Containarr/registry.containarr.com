@@ -9,7 +9,7 @@
   "dockerPorts": [],
   "dockerNetworkMode": "host",
   "dockerVolumes": {
-    "scrypted-volume": "/server/volume"
+    "$REQUIRED": "/server/volume"
   },
   "dockerEnvironment": {
     "TZ": "$TIMEZONE"

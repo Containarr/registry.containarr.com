@@ -9,7 +9,7 @@
   "dockerPorts": [],
   "dockerNetworkMode": "bridge",
   "dockerVolumes": {
-    "vaultwarden-data": "/data"
+    "$REQUIRED": "/data"
   },
   "dockerEnvironment": {
     "SIGNUPS_ALLOWED": "false",

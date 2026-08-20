@@ -9,7 +9,7 @@
   "dockerPorts": [],
   "dockerNetworkMode": "bridge",
   "dockerVolumes": [
-    "bazarr-config:/config",
+    "$REQUIRED:/config",
     "$REQUIRED:/movies",
     "$REQUIRED:/tv"
   ],

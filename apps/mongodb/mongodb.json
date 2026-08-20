@@ -9,7 +9,7 @@
   "dockerPorts": [],
   "dockerNetworkMode": "bridge",
   "dockerVolumes": {
-    "mongodb-data": "/data/db"
+    "$REQUIRED": "/data/db"
   },
   "dockerEnvironment": {}
 }

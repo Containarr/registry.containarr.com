@@ -8,11 +8,11 @@
   "dockerImage": "docker.io/directus/directus:latest",
   "dockerPorts": [],
   "dockerNetworkMode": "bridge",
-  "dockerVolumes": {
-    "directus-database": "/directus/database",
-    "directus-uploads": "/directus/uploads",
-    "directus-extensions": "/directus/extensions"
-  },
+  "dockerVolumes": [
+    "$REQUIRED:/directus/database",
+    "$REQUIRED:/directus/uploads",
+    "$REQUIRED:/directus/extensions"
+  ],
   "dockerEnvironment": {
     "SECRET": "$REQUIRED",
     "DB_CLIENT": "sqlite3",

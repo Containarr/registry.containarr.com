@@ -15,7 +15,7 @@
   ],
   "dockerNetworkMode": "bridge",
   "dockerVolumes": {
-    "wg-easy-data": "/etc/wireguard",
+    "$REQUIRED": "/etc/wireguard",
     "/lib/modules": "/lib/modules:ro"
   },
   "dockerEnvironment": {

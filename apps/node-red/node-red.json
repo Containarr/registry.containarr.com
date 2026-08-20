@@ -9,7 +9,7 @@
   "dockerPorts": [],
   "dockerNetworkMode": "bridge",
   "dockerVolumes": {
-    "node-red-data": "/data"
+    "$REQUIRED": "/data"
   },
   "dockerEnvironment": {
     "TZ": "$TIMEZONE"

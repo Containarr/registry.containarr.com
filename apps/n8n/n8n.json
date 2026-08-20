@@ -9,7 +9,7 @@
   "dockerPorts": [],
   "dockerNetworkMode": "bridge",
   "dockerVolumes": {
-    "n8n-data": "/home/node/.n8n"
+    "$REQUIRED": "/home/node/.n8n"
   },
   "dockerEnvironment": {
     "TZ": "$TIMEZONE",

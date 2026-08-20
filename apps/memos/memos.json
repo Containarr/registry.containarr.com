@@ -9,7 +9,7 @@
   "dockerPorts": [],
   "dockerNetworkMode": "bridge",
   "dockerVolumes": {
-    "memos-data": "/var/opt/memos"
+    "$REQUIRED": "/var/opt/memos"
   },
   "dockerEnvironment": {}
 }

@@ -9,7 +9,7 @@
   "dockerPorts": [],
   "dockerNetworkMode": "bridge",
   "dockerVolumes": {
-    "beszel-data": "/beszel_data"
+    "$REQUIRED": "/beszel_data"
   },
   "dockerEnvironment": {}
 }

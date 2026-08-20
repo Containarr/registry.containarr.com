@@ -9,7 +9,7 @@
   "dockerPorts": [],
   "dockerNetworkMode": "bridge",
   "dockerVolumes": {
-    "changedetection-data": "/datastore"
+    "$REQUIRED": "/datastore"
   },
   "dockerEnvironment": {
     "TZ": "$TIMEZONE"

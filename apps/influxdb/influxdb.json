@@ -8,9 +8,9 @@
   "dockerImage": "docker.io/influxdb:latest",
   "dockerPorts": [],
   "dockerNetworkMode": "bridge",
-  "dockerVolumes": {
-    "influxdb-data": "/var/lib/influxdb2",
-    "influxdb-config": "/etc/influxdb2"
-  },
+  "dockerVolumes": [
+    "$REQUIRED:/var/lib/influxdb2",
+    "$REQUIRED:/etc/influxdb2"
+  ],
   "dockerEnvironment": {}
 }

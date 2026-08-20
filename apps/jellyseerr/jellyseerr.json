@@ -9,7 +9,7 @@
   "dockerPorts": [],
   "dockerNetworkMode": "bridge",
   "dockerVolumes": {
-    "jellyseerr-config": "/app/config"
+    "$REQUIRED": "/app/config"
   },
   "dockerEnvironment": {
     "LOG_LEVEL": "info",

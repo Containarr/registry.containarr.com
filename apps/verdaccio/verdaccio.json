@@ -8,9 +8,9 @@
   "dockerImage": "docker.io/verdaccio/verdaccio:latest",
   "dockerPorts": [],
   "dockerNetworkMode": "bridge",
-  "dockerVolumes": {
-    "verdaccio-storage": "/verdaccio/storage",
-    "verdaccio-config": "/verdaccio/conf"
-  },
+  "dockerVolumes": [
+    "$REQUIRED:/verdaccio/storage",
+    "$REQUIRED:/verdaccio/conf"
+  ],
   "dockerEnvironment": {}
 }

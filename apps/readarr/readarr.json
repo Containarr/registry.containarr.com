@@ -9,7 +9,7 @@
   "dockerPorts": [],
   "dockerNetworkMode": "bridge",
   "dockerVolumes": [
-    "readarr-config:/config",
+    "$REQUIRED:/config",
     "$REQUIRED:/books",
     "$REQUIRED:/downloads"
   ],

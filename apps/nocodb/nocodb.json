@@ -9,7 +9,7 @@
   "dockerPorts": [],
   "dockerNetworkMode": "bridge",
   "dockerVolumes": {
-    "nocodb-data": "/usr/app/data"
+    "$REQUIRED": "/usr/app/data"
   },
   "dockerEnvironment": {}
 }

@@ -9,7 +9,7 @@
   "dockerPorts": [],
   "dockerNetworkMode": "bridge",
   "dockerVolumes": [
-    "calibre-web-config:/config",
+    "$REQUIRED:/config",
     "$REQUIRED:/books"
   ],
   "dockerEnvironment": {

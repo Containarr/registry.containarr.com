@@ -9,7 +9,7 @@
   "dockerPorts": [],
   "dockerNetworkMode": "bridge",
   "dockerVolumes": [
-    "filebrowser-data:/database",
+    "$REQUIRED:/database",
     "$REQUIRED:/srv"
   ],
   "dockerEnvironment": {}

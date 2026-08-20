@@ -9,7 +9,7 @@
   "dockerPorts": [],
   "dockerNetworkMode": "bridge",
   "dockerVolumes": {
-    "gitea-data": "/data"
+    "$REQUIRED": "/data"
   },
   "dockerEnvironment": {
     "USER_UID": "1000",

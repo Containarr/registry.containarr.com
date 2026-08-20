@@ -9,7 +9,7 @@
   "dockerPorts": [],
   "dockerNetworkMode": "bridge",
   "dockerVolumes": {
-    "dashy-config": "/app/user-data"
+    "$REQUIRED": "/app/user-data"
   },
   "dockerEnvironment": {
     "NODE_ENV": "production"

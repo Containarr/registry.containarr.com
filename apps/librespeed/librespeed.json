@@ -9,7 +9,7 @@
   "dockerPorts": [],
   "dockerNetworkMode": "bridge",
   "dockerVolumes": {
-    "librespeed-config": "/config"
+    "$REQUIRED": "/config"
   },
   "dockerEnvironment": {
     "PUID": "1000",

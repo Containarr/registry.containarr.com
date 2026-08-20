@@ -9,7 +9,7 @@
   "dockerPorts": [],
   "dockerNetworkMode": "bridge",
   "dockerVolumes": [
-    "transmission-config:/config",
+    "$REQUIRED:/config",
     "$REQUIRED:/downloads",
     "$REQUIRED:/watch"
   ],

@@ -9,8 +9,8 @@
   "dockerPorts": [],
   "dockerNetworkMode": "bridge",
   "dockerVolumes": [
-    "plex-config:/config",
-    "plex-transcode:/transcode",
+    "$REQUIRED:/config",
+    "$REQUIRED:/transcode",
     "$REQUIRED:/data"
   ],
   "dockerEnvironment": {

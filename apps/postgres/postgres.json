@@ -9,7 +9,7 @@
   "dockerPorts": [],
   "dockerNetworkMode": "bridge",
   "dockerVolumes": {
-    "postgres-data": "/var/lib/postgresql/data"
+    "$REQUIRED": "/var/lib/postgresql/data"
   },
   "dockerEnvironment": {
     "POSTGRES_USER": "postgres",

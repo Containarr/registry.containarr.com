@@ -9,7 +9,7 @@
   "dockerPorts": [],
   "dockerNetworkMode": "bridge",
   "dockerVolumes": [
-    "radarr-config:/config",
+    "$REQUIRED:/config",
     "$REQUIRED:/movies",
     "$REQUIRED:/downloads"
   ],

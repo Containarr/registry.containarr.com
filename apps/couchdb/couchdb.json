@@ -9,7 +9,7 @@
   "dockerPorts": [],
   "dockerNetworkMode": "bridge",
   "dockerVolumes": {
-    "couchdb-data": "/opt/couchdb/data"
+    "$REQUIRED": "/opt/couchdb/data"
   },
   "dockerEnvironment": {
     "COUCHDB_USER": "$REQUIRED",

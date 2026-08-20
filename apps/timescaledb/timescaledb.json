@@ -15,7 +15,7 @@
   ],
   "dockerNetworkMode": "bridge",
   "dockerVolumes": {
-    "timescaledb-data": "/var/lib/postgresql/data"
+    "$REQUIRED": "/var/lib/postgresql/data"
   },
   "dockerEnvironment": {
     "POSTGRES_PASSWORD": "$REQUIRED"

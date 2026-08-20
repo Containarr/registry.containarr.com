@@ -9,8 +9,8 @@
   "dockerPorts": [],
   "dockerNetworkMode": "bridge",
   "dockerVolumes": [
-    "jellyfin-config:/config",
-    "jellyfin-cache:/cache",
+    "$REQUIRED:/config",
+    "$REQUIRED:/cache",
     "$REQUIRED:/media"
   ],
   "dockerEnvironment": {

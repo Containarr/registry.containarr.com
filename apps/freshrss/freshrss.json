@@ -8,10 +8,10 @@
   "dockerImage": "docker.io/freshrss/freshrss:latest",
   "dockerPorts": [],
   "dockerNetworkMode": "bridge",
-  "dockerVolumes": {
-    "freshrss-data": "/var/www/FreshRSS/data",
-    "freshrss-extensions": "/var/www/FreshRSS/extensions"
-  },
+  "dockerVolumes": [
+    "$REQUIRED:/var/www/FreshRSS/data",
+    "$REQUIRED:/var/www/FreshRSS/extensions"
+  ],
   "dockerEnvironment": {
     "TZ": "$TIMEZONE",
     "CRON_MIN": "3,33"

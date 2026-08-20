@@ -9,7 +9,7 @@
   "dockerPorts": [],
   "dockerNetworkMode": "bridge",
   "dockerVolumes": {
-    "open-webui-data": "/app/backend/data"
+    "$REQUIRED": "/app/backend/data"
   },
   "dockerEnvironment": {
     "OLLAMA_BASE_URL": "http://ollama:11434"

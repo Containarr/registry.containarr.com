@@ -109,7 +109,7 @@
         {
           "type": "object",
           "propertyNames": {
-            "minLength": 1
+            "pattern": "^(?:/|\\$REQUIRED$)"
           },
           "additionalProperties": {
             "type": "string",
@@ -120,7 +120,7 @@
           "type": "array",
           "items": {
             "type": "string",
-            "pattern": "^.+:.+$"
+            "pattern": "^(?:/[^:]*|\\$REQUIRED):.+$"
           }
         }
       ]

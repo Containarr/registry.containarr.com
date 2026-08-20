@@ -9,7 +9,7 @@
   "dockerPorts": [],
   "dockerNetworkMode": "bridge",
   "dockerVolumes": {
-    "redis-data": "/data"
+    "$REQUIRED": "/data"
   },
   "dockerEnvironment": {}
 }

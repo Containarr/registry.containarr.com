@@ -9,7 +9,7 @@
   "dockerPorts": [],
   "dockerNetworkMode": "bridge",
   "dockerVolumes": [
-    "kavita-config:/kavita/config",
+    "$REQUIRED:/kavita/config",
     "$REQUIRED:/books"
   ],
   "dockerEnvironment": {

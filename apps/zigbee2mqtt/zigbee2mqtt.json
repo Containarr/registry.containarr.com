@@ -9,7 +9,7 @@
   "dockerPorts": [],
   "dockerNetworkMode": "bridge",
   "dockerVolumes": {
-    "zigbee2mqtt-data": "/app/data",
+    "$REQUIRED": "/app/data",
     "/run/udev": "/run/udev:ro"
   },
   "dockerEnvironment": {

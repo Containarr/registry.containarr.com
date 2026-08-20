@@ -9,7 +9,7 @@
   "dockerPorts": [],
   "dockerNetworkMode": "bridge",
   "dockerVolumes": {
-    "nextcloud-data": "/var/www/html"
+    "$REQUIRED": "/var/www/html"
   },
   "dockerEnvironment": {}
 }

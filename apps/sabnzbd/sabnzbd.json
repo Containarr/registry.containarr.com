@@ -9,7 +9,7 @@
   "dockerPorts": [],
   "dockerNetworkMode": "bridge",
   "dockerVolumes": [
-    "sabnzbd-config:/config",
+    "$REQUIRED:/config",
     "$REQUIRED:/downloads",
     "$REQUIRED:/incomplete-downloads"
   ],

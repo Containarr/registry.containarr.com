@@ -9,7 +9,7 @@
   "dockerPorts": [],
   "dockerNetworkMode": "bridge",
   "dockerVolumes": {
-    "actual-budget-data": "/data"
+    "$REQUIRED": "/data"
   },
   "dockerEnvironment": {}
 }

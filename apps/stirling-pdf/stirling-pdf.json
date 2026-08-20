@@ -8,11 +8,11 @@
   "dockerImage": "docker.io/stirlingtools/stirling-pdf:latest",
   "dockerPorts": [],
   "dockerNetworkMode": "bridge",
-  "dockerVolumes": {
-    "stirling-data": "/usr/share/tessdata",
-    "stirling-config": "/configs",
-    "stirling-logs": "/logs"
-  },
+  "dockerVolumes": [
+    "$REQUIRED:/usr/share/tessdata",
+    "$REQUIRED:/configs",
+    "$REQUIRED:/logs"
+  ],
   "dockerEnvironment": {
     "SECURITY_ENABLELOGIN": "true",
     "SYSTEM_DEFAULTLOCALE": "en-GB"

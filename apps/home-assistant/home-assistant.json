@@ -9,7 +9,7 @@
   "dockerPorts": [],
   "dockerNetworkMode": "host",
   "dockerVolumes": {
-    "home-assistant-config": "/config",
+    "$REQUIRED": "/config",
     "/run/dbus": "/run/dbus:ro"
   },
   "dockerEnvironment": {

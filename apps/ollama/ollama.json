@@ -9,7 +9,7 @@
   "dockerPorts": [],
   "dockerNetworkMode": "bridge",
   "dockerVolumes": {
-    "ollama-data": "/root/.ollama"
+    "$REQUIRED": "/root/.ollama"
   },
   "dockerEnvironment": {}
 }

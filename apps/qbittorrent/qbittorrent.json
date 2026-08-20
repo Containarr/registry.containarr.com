@@ -20,7 +20,7 @@
   ],
   "dockerNetworkMode": "bridge",
   "dockerVolumes": [
-    "qbittorrent-config:/config",
+    "$REQUIRED:/config",
     "$REQUIRED:/downloads"
   ],
   "dockerEnvironment": {
