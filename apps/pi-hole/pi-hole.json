@@ -19,8 +19,11 @@
     }
   ],
   "dockerNetworkMode": "bridge",
-  "dockerVolumes": {},
+  "dockerVolumes": {
+    "$REQUIRED": "/etc/pihole"
+  },
   "dockerEnvironment": {
-    "TZ": "$TIMEZONE"
+    "TZ": "$TIMEZONE",
+    "FTLCONF_webserver_api_password": "$REQUIRED"
   }
 }
