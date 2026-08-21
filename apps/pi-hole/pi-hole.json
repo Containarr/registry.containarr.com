@@ -24,6 +24,7 @@
   },
   "dockerEnvironment": {
     "TZ": "$TIMEZONE",
-    "FTLCONF_webserver_api_password": "$REQUIRED"
+    "FTLCONF_webserver_api_password": "$REQUIRED",
+    "FTLCONF_dns_listeningMode": "all"
   }
 }
